@@ -11,6 +11,21 @@ import matplotlib.pyplot as plt
 import math
 import random
 
+# only used for debugger
+import sys
+
+# # 模拟命令行参数
+# sys.argv = [
+#     "main.py",  # 脚本名称
+#     "--subset", "zara2",  # 数据集子集，比如 eth
+#     "--epochs", "2",  # 只跑 1 个 epoch 方便调试
+#     "--batch_size", "2",  # 减小 batch size 方便调试
+#     "--past_length", "8",
+#     "--future_length", "12",
+#     "--nf", "64",
+#     "--model_name", "test_model"
+# ]
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 parser = argparse.ArgumentParser(description='VAE MNIST Example')
 parser.add_argument('--exp_name', type=str, default='exp_1', metavar='N', help='experiment_name')
@@ -103,7 +118,7 @@ try:
 except OSError:
     pass
 
-if args.subset == 'zara1':
+if args.subset == 'zara1_main.sh':
     args.channels = 128
 else:
     args.channels = 64
@@ -234,6 +249,7 @@ def train(model, optimizer, epoch, loader, backprop=True):
             num_valid = num_valid.cuda()
             num_valid = num_valid.type(torch.int)
 
+            # 并不是真正意义上的速度，而是通过坐标数据推导出的位移信息
             vel = torch.zeros_like(loc)
             vel[:,:,1:] = loc[:,:,1:] - loc[:,:,:-1]
             vel[:,:,0] = vel[:,:,1]
@@ -243,6 +259,8 @@ def train(model, optimizer, epoch, loader, backprop=True):
             optimizer.zero_grad()
 
             vel = vel * constant
+
+            # [batch_size, agent_num, past_length]
             nodes = torch.sqrt(torch.sum(vel ** 2, dim=-1)).detach()
             loc_pred, category = model(nodes, loc.detach(), vel, num_valid)
 

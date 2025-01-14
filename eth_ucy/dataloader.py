@@ -20,7 +20,7 @@ def get_ethucy_split(dataset):
           test = ['biwi_eth']
      elif dataset == 'hotel':
           test = ['biwi_hotel']
-     elif dataset == 'zara1':
+     elif dataset == 'zara1_main.sh':
           test = ['crowds_zara01']
      elif dataset == 'zara2':
           test = ['crowds_zara02']
@@ -91,7 +91,7 @@ class data_generator(object):
         assert phase in ['training', 'testing'], 'error'
         assert split in ['train', 'val', 'test'], 'error'
 
-        if dataset in {'eth', 'hotel', 'univ', 'zara1', 'zara2'}:
+        if dataset in {'eth', 'hotel', 'univ', 'zara1_main.sh', 'zara2'}:
             data_root = '../eth_ucy/data'          
             seq_train, seq_val, seq_test = get_ethucy_split(dataset)
             self.init_frame = 0
@@ -181,7 +181,7 @@ class data_generator_new(object):
         assert phase in ['training', 'testing'], 'error'
         assert split in ['train', 'val', 'test'], 'error'
 
-        if dataset in {'eth', 'hotel', 'univ', 'zara1', 'zara2'}:
+        if dataset in {'eth', 'hotel', 'univ', 'zara1_main.sh', 'zara2'}:
             data_root = 'eth_ucy/data'          
             seq_train, seq_val, seq_test = get_ethucy_split(dataset)
             self.init_frame = 0

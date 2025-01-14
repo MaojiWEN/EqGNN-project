@@ -166,14 +166,14 @@ class EqMotion(nn.Module):
             cagegory_per_layer.append(category)
 
         all_out = []
-        for i in range(20):
+        for i in range(1):
             _, out, _ = self._modules["head_%d" % i](h, x, vel,valid_mask,valid_agent_mask,num_valid, edge_attr=edge_attr, category=category)
             out_mean = torch.mean(torch.mean(out*valid_agent_mask,dim=-2,keepdim=True),dim=-3,keepdim=True) * (agent_num/num_valid[:,None,None,None])
             out = self.predict_head[i]((out-out_mean).transpose(2,3)).transpose(2,3) + out_mean
             all_out.append(out[:,:,None,:,:])
 
         x = torch.cat(all_out,dim=2)
-        x = x.view(batch_size,agent_num,20,self.out_channel,-1)
+        x = x.view(batch_size,agent_num,1,self.out_channel,-1)
 
         if self.apply_dct:
             idct_m = idct_m[:,:,None,:,:]

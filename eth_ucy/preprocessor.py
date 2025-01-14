@@ -21,7 +21,7 @@ class preprocess(object):
         self.phase = phase
         self.log = log
 
-        if parser['dataset'] in {'eth', 'hotel', 'univ', 'zara1', 'zara2'}:
+        if parser['dataset'] in {'eth', 'hotel', 'univ', 'zara1_main.sh', 'zara2'}:
             label_path = f'{data_root}/{self.dataset}/{seq_name}.txt'
             # label_path = f'{data_root}/{parser['dataset']}/{seq_name}.txt'
             delimiter = ' '
@@ -29,7 +29,7 @@ class preprocess(object):
             assert False, 'error'
 
         self.gt = np.genfromtxt(label_path, delimiter=delimiter, dtype=str)
-        frames = self.gt[:, 0].astype(np.float32).astype(np.int)
+        frames = self.gt[:, 0].astype(np.float32).astype(int)
         fr_start, fr_end = frames.min(), frames.max()
         self.init_frame = fr_start
         self.num_fr = fr_end + 1 - fr_start

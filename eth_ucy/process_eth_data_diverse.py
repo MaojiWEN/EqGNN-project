@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     if args.subset == 'univ':
         args.total_num = 2
-    elif args.subset == 'zara1':
+    elif args.subset == 'zara1_main.sh':
         args.total_num = 3
     else:
         args.total_num = 1

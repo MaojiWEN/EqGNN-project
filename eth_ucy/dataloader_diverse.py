@@ -20,7 +20,7 @@ def get_ethucy_split(dataset):
           test = ['biwi_eth']
      elif dataset == 'hotel':
           test = ['biwi_hotel']
-     elif dataset == 'zara1':
+     elif dataset == 'zara1_main.sh':
           test = ['crowds_zara01']
      elif dataset == 'zara2':
           test = ['crowds_zara02']
@@ -56,7 +56,7 @@ def print_log(print_str, log, same_line=False, display=True):
 class eth_dataset(object):
     def __init__(self, dataset, past_frames, future_frames, traj_scale, split='train', phase='training'):
         # file_dir = 'eth_ucy/processed_data_diverse/'
-        file_dir = '/GPFS/data/cxxu/trajectory_prediction/equivariant/egnn-main/eth_ucy/processed_data_diverse/'
+        file_dir = 'eth_ucy/processed_data_diverse/'
         if phase == 'training':
             data_file_path = file_dir + dataset +'_data_train.npy'
             num_file_path = file_dir + dataset +'_num_train.npy'
@@ -93,7 +93,7 @@ class data_generator(object):
         assert phase in ['training', 'testing'], 'error'
         assert split in ['train', 'val', 'test'], 'error'
 
-        if dataset in {'eth', 'hotel', 'univ', 'zara1', 'zara2'}:
+        if dataset in {'eth', 'hotel', 'univ', 'zara1_main.sh', 'zara2'}:
             data_root = 'eth_ucy/data'          
             seq_train, seq_val, seq_test = get_ethucy_split(dataset)
             self.init_frame = 0
@@ -182,7 +182,7 @@ class data_generator_new(object):
         assert phase in ['training', 'testing'], 'error'
         assert split in ['train', 'val', 'test'], 'error'
 
-        if dataset in {'eth', 'hotel', 'univ', 'zara1', 'zara2'}:
+        if dataset in {'eth', 'hotel', 'univ', 'zara1_main.sh', 'zara2'}:
             data_root = 'eth_ucy/data'          
             seq_train, seq_val, seq_test = get_ethucy_split(dataset)
             self.init_frame = 0
