@@ -1,0 +1,48 @@
+Molecule: Aspirin
+Total Atoms: 13
+Non-Stationary Atoms: 13
+Mean p-value: 0.8597
+Std p-value: 0.1110
+
+Molecule: Benzene
+Total Atoms: 6
+Non-Stationary Atoms: 6
+Mean p-value: 0.9784
+Std p-value: 0.0253
+
+Molecule: Ethanol
+Total Atoms: 3
+Non-Stationary Atoms: 3
+Mean p-value: 0.5710
+Std p-value: 0.3295
+
+Molecule: Malonaldehyde
+Total Atoms: 5
+Non-Stationary Atoms: 5
+Mean p-value: 0.8801
+Std p-value: 0.1128
+
+Molecule: Naphthalene
+Total Atoms: 10
+Non-Stationary Atoms: 8
+Mean p-value: 0.2968
+Std p-value: 0.2277
+
+Molecule: Salicylic
+Total Atoms: 10
+Non-Stationary Atoms: 6
+Mean p-value: 0.1688
+Std p-value: 0.1442
+
+Molecule: Toluene
+Total Atoms: 7
+Non-Stationary Atoms: 6
+Mean p-value: 0.1551
+Std p-value: 0.1146
+
+Molecule: Uracil
+Total Atoms: 8
+Non-Stationary Atoms: 7
+Mean p-value: 0.3007
+Std p-value: 0.2000
+

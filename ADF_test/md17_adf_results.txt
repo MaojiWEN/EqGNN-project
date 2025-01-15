@@ -1,0 +1,78 @@
+
+Processing Aspirin - Time range: 1000 to 1500
+Molecule: Aspirin, Atom: 0, Best Coord: 2, ADF Statistic: -0.7726, p-value: 0.8270, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Aspirin, Atom: 1, Best Coord: 2, ADF Statistic: -0.1057, p-value: 0.9489, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Aspirin, Atom: 2, Best Coord: 2, ADF Statistic: -0.7163, p-value: 0.8425, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Aspirin, Atom: 3, Best Coord: 2, ADF Statistic: -1.3602, p-value: 0.6012, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Aspirin, Atom: 4, Best Coord: 1, ADF Statistic: -0.4068, p-value: 0.9090, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Aspirin, Atom: 5, Best Coord: 0, ADF Statistic: -0.8798, p-value: 0.7946, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Aspirin, Atom: 6, Best Coord: 2, ADF Statistic: -0.9641, p-value: 0.7661, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Aspirin, Atom: 7, Best Coord: 0, ADF Statistic: -0.0667, p-value: 0.9527, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Aspirin, Atom: 8, Best Coord: 0, ADF Statistic: 0.2700, p-value: 0.9759, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Aspirin, Atom: 9, Best Coord: 2, ADF Statistic: -0.2224, p-value: 0.9358, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Aspirin, Atom: 10, Best Coord: 0, ADF Statistic: -0.1061, p-value: 0.9488, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Aspirin, Atom: 11, Best Coord: 0, ADF Statistic: 0.0523, p-value: 0.9627, Critical Values: 1%: -3.444, 5%: -2.867, 10%: -2.570
+Molecule: Aspirin, Atom: 12, Best Coord: 2, ADF Statistic: -1.1111, p-value: 0.7106, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+
+Processing Benzene - Time range: 1000 to 1500
+Molecule: Benzene, Atom: 0, Best Coord: 2, ADF Statistic: 0.9942, p-value: 0.9942, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Benzene, Atom: 1, Best Coord: 2, ADF Statistic: 0.7857, p-value: 0.9914, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Benzene, Atom: 2, Best Coord: 1, ADF Statistic: 0.7489, p-value: 0.9908, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Benzene, Atom: 3, Best Coord: 0, ADF Statistic: -0.3092, p-value: 0.9242, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Benzene, Atom: 4, Best Coord: 1, ADF Statistic: 0.2247, p-value: 0.9736, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Benzene, Atom: 5, Best Coord: 2, ADF Statistic: 1.2346, p-value: 0.9962, Critical Values: 1%: -3.444, 5%: -2.867, 10%: -2.570
+
+Processing Ethanol - Time range: 1000 to 1500
+Molecule: Ethanol, Atom: 0, Best Coord: 0, ADF Statistic: -2.2507, p-value: 0.1884, Critical Values: 1%: -3.444, 5%: -2.867, 10%: -2.570
+Molecule: Ethanol, Atom: 1, Best Coord: 2, ADF Statistic: 0.8637, p-value: 0.9926, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Ethanol, Atom: 2, Best Coord: 1, ADF Statistic: -1.5032, p-value: 0.5319, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+
+Processing Malonaldehyde - Time range: 1000 to 1500
+Molecule: Malonaldehyde, Atom: 0, Best Coord: 1, ADF Statistic: -0.5668, p-value: 0.8783, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Malonaldehyde, Atom: 1, Best Coord: 2, ADF Statistic: -0.7356, p-value: 0.8373, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Malonaldehyde, Atom: 2, Best Coord: 1, ADF Statistic: 1.1084, p-value: 0.9953, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Malonaldehyde, Atom: 3, Best Coord: 1, ADF Statistic: 1.3059, p-value: 0.9966, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Malonaldehyde, Atom: 4, Best Coord: 1, ADF Statistic: -1.1540, p-value: 0.6931, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+
+Processing Naphthalene - Time range: 111000 to 111500
+Molecule: Naphthalene, Atom: 0, Best Coord: 2, ADF Statistic: -1.3415, p-value: 0.6100, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Naphthalene, Atom: 1, Best Coord: 2, ADF Statistic: -1.3438, p-value: 0.6089, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Naphthalene, Atom: 2, Best Coord: 2, ADF Statistic: -2.1301, p-value: 0.2326, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Naphthalene, Atom: 3, Best Coord: 2, ADF Statistic: -3.0698, p-value: 0.0289, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Naphthalene, Atom: 4, Best Coord: 2, ADF Statistic: -1.9403, p-value: 0.3133, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Naphthalene, Atom: 5, Best Coord: 2, ADF Statistic: -2.5923, p-value: 0.0946, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Naphthalene, Atom: 6, Best Coord: 2, ADF Statistic: -2.6011, p-value: 0.0928, Critical Values: 1%: -3.444, 5%: -2.867, 10%: -2.570
+Molecule: Naphthalene, Atom: 7, Best Coord: 2, ADF Statistic: -1.6909, p-value: 0.4358, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Naphthalene, Atom: 8, Best Coord: 2, ADF Statistic: -3.5369, p-value: 0.0071, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Naphthalene, Atom: 9, Best Coord: 2, ADF Statistic: -1.4795, p-value: 0.5436, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+
+Processing Salicylic - Time range: 11000 to 12000
+Molecule: Salicylic, Atom: 0, Best Coord: 2, ADF Statistic: -3.4823, p-value: 0.0085, Critical Values: 1%: -3.437, 5%: -2.864, 10%: -2.568
+Molecule: Salicylic, Atom: 1, Best Coord: 1, ADF Statistic: -3.4493, p-value: 0.0094, Critical Values: 1%: -3.437, 5%: -2.864, 10%: -2.568
+Molecule: Salicylic, Atom: 2, Best Coord: 2, ADF Statistic: -2.9160, p-value: 0.0435, Critical Values: 1%: -3.437, 5%: -2.864, 10%: -2.568
+Molecule: Salicylic, Atom: 3, Best Coord: 2, ADF Statistic: -1.9062, p-value: 0.3291, Critical Values: 1%: -3.437, 5%: -2.864, 10%: -2.568
+Molecule: Salicylic, Atom: 4, Best Coord: 2, ADF Statistic: -2.6041, p-value: 0.0922, Critical Values: 1%: -3.437, 5%: -2.864, 10%: -2.568
+Molecule: Salicylic, Atom: 5, Best Coord: 1, ADF Statistic: -3.1875, p-value: 0.0207, Critical Values: 1%: -3.437, 5%: -2.865, 10%: -2.568
+Molecule: Salicylic, Atom: 6, Best Coord: 2, ADF Statistic: -1.8274, p-value: 0.3669, Critical Values: 1%: -3.437, 5%: -2.864, 10%: -2.568
+Molecule: Salicylic, Atom: 7, Best Coord: 2, ADF Statistic: -2.1881, p-value: 0.2106, Critical Values: 1%: -3.437, 5%: -2.864, 10%: -2.568
+Molecule: Salicylic, Atom: 8, Best Coord: 2, ADF Statistic: -1.8109, p-value: 0.3751, Critical Values: 1%: -3.437, 5%: -2.864, 10%: -2.568
+Molecule: Salicylic, Atom: 9, Best Coord: 2, ADF Statistic: -2.1310, p-value: 0.2322, Critical Values: 1%: -3.437, 5%: -2.865, 10%: -2.568
+
+Processing Toluene - Time range: 12000 to 12500
+Molecule: Toluene, Atom: 0, Best Coord: 1, ADF Statistic: -2.5236, p-value: 0.1098, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Toluene, Atom: 1, Best Coord: 1, ADF Statistic: -2.8308, p-value: 0.0540, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Toluene, Atom: 2, Best Coord: 2, ADF Statistic: -2.4626, p-value: 0.1248, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Toluene, Atom: 3, Best Coord: 2, ADF Statistic: -1.8207, p-value: 0.3702, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Toluene, Atom: 4, Best Coord: 2, ADF Statistic: -2.0037, p-value: 0.2849, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Toluene, Atom: 5, Best Coord: 2, ADF Statistic: -2.5745, p-value: 0.0984, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Toluene, Atom: 6, Best Coord: 2, ADF Statistic: -2.9156, p-value: 0.0436, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+
+Processing Uracil - Time range: 11000 to 11500
+Molecule: Uracil, Atom: 0, Best Coord: 2, ADF Statistic: -2.0942, p-value: 0.2468, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Uracil, Atom: 1, Best Coord: 2, ADF Statistic: -2.7661, p-value: 0.0633, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Uracil, Atom: 2, Best Coord: 2, ADF Statistic: -1.8229, p-value: 0.3692, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Uracil, Atom: 3, Best Coord: 2, ADF Statistic: -2.0658, p-value: 0.2585, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Uracil, Atom: 4, Best Coord: 2, ADF Statistic: -1.3994, p-value: 0.5826, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Uracil, Atom: 5, Best Coord: 2, ADF Statistic: -1.9897, p-value: 0.2911, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Uracil, Atom: 6, Best Coord: 2, ADF Statistic: -1.3789, p-value: 0.5924, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
+Molecule: Uracil, Atom: 7, Best Coord: 2, ADF Statistic: -3.9974, p-value: 0.0014, Critical Values: 1%: -3.444, 5%: -2.868, 10%: -2.570
