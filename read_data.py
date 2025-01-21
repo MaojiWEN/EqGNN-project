@@ -1,51 +1,84 @@
-import os
-import numpy as np
+import torch
 
+# 创建一个形状为 [3, 5, 6] 的张量，确保每个时间步是 [1, 2, 3, 4, 5]
+data = torch.tensor([[[1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5]],
 
-def read_all_npz_files(directory):
-    """
-    遍历目录下的所有 .npz 文件并读取其内容
-    :param directory: str, 要扫描的目录路径
-    """
-    print(f"扫描目录: {directory}")
-    for root, _, files in os.walk(directory):
-        for file in files:
-            if file.endswith(".npz"):
-                file_path = os.path.join(root, file)
-                read_npz(file_path)
+                     [[1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5]],
 
+                     [[1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5],
+                      [1, 2, 3, 4, 5]]])
 
-def read_npz(file_path):
-    """
-    读取并分析单个 .npz 文件的维度和内容信息
-    :param file_path: str, .npz 文件路径
-    """
-    try:
-        # 加载 .npz 文件
-        data = np.load(file_path)
+# 打印原始数据的形状
+print("Original shape:", data.shape)
 
-        print(f"\n文件: {file_path}")
-        print("包含的数据键及其形状:")
+# 打印每一列 [:, i] 的内容
+for i in range(data.shape[2]):
+    print(f"stft_sqr[:, {i}]:")
+    print(data[:, i])
+    print()  # 换行
 
-        # 遍历文件中的数据
-        for key in data.files:
-            array = data[key]
-            print(f"- {key}: {array.shape}")
-
-        # 提供维度含义的通用说明
-        print("\n键的可能含义（需根据具体数据集调整）:")
-        print("- R: 原子坐标（shape: (时间步数, 原子数, 3)）")
-        print("- F: 原子力（shape: (时间步数, 原子数, 3)）")
-        print("- E: 能量（shape: (时间步数,)）")
-        print("- Z: 原子类型（shape: (原子数,)）")
-    except Exception as e:
-        print(f"读取 .npz 文件时出错: {e}")
-
-
-if __name__ == "__main__":
-    # 指定需要扫描的目录路径
-    directory_path = "md17/raw_data/md17"  # 替换为你的实际路径
-    read_all_npz_files(directory_path)
+# import os
+# import numpy as np
+#
+#
+# def read_all_npz_files(directory):
+#     """
+#     遍历目录下的所有 .npz 文件并读取其内容
+#     :param directory: str, 要扫描的目录路径
+#     """
+#     print(f"扫描目录: {directory}")
+#     for root, _, files in os.walk(directory):
+#         for file in files:
+#             if file.endswith(".npz"):
+#                 file_path = os.path.join(root, file)
+#                 read_npz(file_path)
+#
+#
+# def read_npz(file_path):
+#     """
+#     读取并分析单个 .npz 文件的维度和内容信息
+#     :param file_path: str, .npz 文件路径
+#     """
+#     try:
+#         # 加载 .npz 文件
+#         data = np.load(file_path)
+#
+#         print(f"\n文件: {file_path}")
+#         print("包含的数据键及其形状:")
+#
+#         # 遍历文件中的数据
+#         for key in data.files:
+#             array = data[key]
+#             print(f"- {key}: {array.shape}")
+#
+#         # 提供维度含义的通用说明
+#         print("\n键的可能含义（需根据具体数据集调整）:")
+#         print("- R: 原子坐标（shape: (时间步数, 原子数, 3)）")
+#         print("- F: 原子力（shape: (时间步数, 原子数, 3)）")
+#         print("- E: 能量（shape: (时间步数,)）")
+#         print("- Z: 原子类型（shape: (原子数,)）")
+#     except Exception as e:
+#         print(f"读取 .npz 文件时出错: {e}")
+#
+#
+# if __name__ == "__main__":
+#     # 指定需要扫描的目录路径
+#     directory_path = "md17/raw_data/md17"  # 替换为你的实际路径
+#     read_all_npz_files(directory_path)
 
 # import numpy as np
 #

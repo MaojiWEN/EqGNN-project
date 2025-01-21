@@ -1,0 +1,259 @@
+Starting experiment with Learning Rate = 0.00010
+Epoch 0: Test Loss = 1.28210, ADE = 1.28210, FDE = 2.37134
+Epoch 1: Test Loss = 1.04234, ADE = 1.04234, FDE = 2.01964
+Epoch 2: Test Loss = 1.01058, ADE = 1.01058, FDE = 1.94571
+Epoch 3: Test Loss = 0.99625, ADE = 0.99625, FDE = 1.92810
+Epoch 4: Test Loss = 0.97036, ADE = 0.97036, FDE = 1.91383
+Epoch 5: Test Loss = 0.95997, ADE = 0.95997, FDE = 1.92610
+Epoch 7: Test Loss = 0.95947, ADE = 0.95947, FDE = 1.91962
+Starting experiment with Learning Rate = 0.00020
+Starting experiment with Learning Rate = 0.00030
+Starting experiment with Learning Rate = 0.00040
+Starting experiment with Learning Rate = 0.00050
+Starting experiment with Learning Rate = 0.00100
+Starting experiment with Learning Rate = 0.00020
+Epoch 0: Test Loss = 1.03883, ADE = 1.03883, FDE = 1.97675
+Epoch 1: Test Loss = 1.02962, ADE = 1.02962, FDE = 2.06875
+Starting experiment with Learning Rate = 0.00005
+Epoch 0: Test Loss = 1.40413, ADE = 1.40413, FDE = 2.38202
+Epoch 1: Test Loss = 1.28790, ADE = 1.28790, FDE = 2.08639
+Starting experiment with Learning Rate = 0.00030
+Epoch 0: Test Loss = 1.11013, ADE = 1.11013, FDE = 2.04483
+Epoch 1: Test Loss = 1.09765, ADE = 1.09765, FDE = 2.02560
+Epoch 2: Test Loss = 1.08056, ADE = 1.08056, FDE = 2.03936
+Epoch 3: Test Loss = 1.06777, ADE = 1.06777, FDE = 2.02686
+Epoch 4: Test Loss = 1.04325, ADE = 1.04325, FDE = 2.03092
+Epoch 6: Test Loss = 0.97875, ADE = 0.97875, FDE = 1.92738
+Epoch 7: Test Loss = 0.95175, ADE = 0.95175, FDE = 1.94752
+Starting experiment with Learning Rate = 0.00040
+Epoch 0: Test Loss = 1.05487, ADE = 1.05487, FDE = 2.08931
+Epoch 1: Test Loss = 0.97965, ADE = 0.97965, FDE = 1.99383
+Epoch 2: Test Loss = 0.93419, ADE = 0.93419, FDE = 1.91217
+Epoch 3: Test Loss = 0.92791, ADE = 0.92791, FDE = 1.88650
+Starting experiment with Learning Rate = 0.00050
+Epoch 0: Test Loss = 1.01255, ADE = 1.01255, FDE = 2.03629
+Epoch 46: Test Loss = 1.00615, ADE = 1.00615, FDE = 2.04554
+Epoch 47: Test Loss = 0.97415, ADE = 0.97415, FDE = 1.99658
+Starting experiment with Learning Rate = 0.00100
+Epoch 0: Test Loss = 0.98689, ADE = 0.98689, FDE = 2.04714
+Starting experiment with Learning Rate = 0.00005
+Epoch 0: Test Loss = 1.43417, ADE = 1.43417, FDE = 2.85385
+Epoch 1: Test Loss = 1.16000, ADE = 1.16000, FDE = 2.08267
+Epoch 2: Test Loss = 0.99587, ADE = 0.99587, FDE = 2.01506
+Epoch 3: Test Loss = 0.96599, ADE = 0.96599, FDE = 1.93515
+Epoch 4: Test Loss = 0.95986, ADE = 0.95986, FDE = 1.91309
+Epoch 6: Test Loss = 0.95251, ADE = 0.95251, FDE = 1.90927
+Epoch 7: Test Loss = 0.94953, ADE = 0.94953, FDE = 1.93200
+Epoch 8: Test Loss = 0.93805, ADE = 0.93805, FDE = 1.92888
+Starting experiment with Learning Rate = 0.00001
+Epoch 0: Test Loss = 2.55056, ADE = 2.55056, FDE = 4.17116
+Epoch 1: Test Loss = 2.07684, ADE = 2.07684, FDE = 3.70879
+Epoch 2: Test Loss = 1.44743, ADE = 1.44743, FDE = 2.66960
+Epoch 3: Test Loss = 1.41562, ADE = 1.41562, FDE = 2.39653
+Epoch 4: Test Loss = 1.37512, ADE = 1.37512, FDE = 2.35191
+Epoch 5: Test Loss = 1.34310, ADE = 1.34310, FDE = 2.29318
+Epoch 6: Test Loss = 1.30978, ADE = 1.30978, FDE = 2.23659
+Epoch 10: Test Loss = 1.28664, ADE = 1.28664, FDE = 2.00074
+Epoch 11: Test Loss = 1.26378, ADE = 1.26378, FDE = 1.98489
+Epoch 12: Test Loss = 1.22609, ADE = 1.22609, FDE = 1.97460
+Epoch 13: Test Loss = 1.18978, ADE = 1.18978, FDE = 1.96768
+Epoch 14: Test Loss = 1.16337, ADE = 1.16337, FDE = 1.96043
+Epoch 15: Test Loss = 1.11775, ADE = 1.11775, FDE = 1.96846
+Epoch 16: Test Loss = 1.09722, ADE = 1.09722, FDE = 1.96443
+Epoch 17: Test Loss = 1.08949, ADE = 1.08949, FDE = 1.95453
+Epoch 18: Test Loss = 1.08647, ADE = 1.08647, FDE = 1.94768
+Epoch 19: Test Loss = 1.07390, ADE = 1.07390, FDE = 1.94633
+Epoch 20: Test Loss = 1.06470, ADE = 1.06470, FDE = 1.94527
+Epoch 22: Test Loss = 1.05809, ADE = 1.05809, FDE = 1.95064
+Epoch 24: Test Loss = 1.02259, ADE = 1.02259, FDE = 1.94975
+Epoch 25: Test Loss = 1.01942, ADE = 1.01942, FDE = 1.95439
+Epoch 27: Test Loss = 1.00962, ADE = 1.00962, FDE = 1.96676
+Epoch 28: Test Loss = 0.98869, ADE = 0.98869, FDE = 1.96160
+Epoch 33: Test Loss = 0.98676, ADE = 0.98676, FDE = 2.00788
+Starting experiment with Learning Rate = 0.00002
+Epoch 0: Test Loss = 1.55296, ADE = 1.55296, FDE = 2.90832
+Epoch 1: Test Loss = 1.43752, ADE = 1.43752, FDE = 2.55816
+Epoch 2: Test Loss = 1.36402, ADE = 1.36402, FDE = 2.33108
+Epoch 3: Test Loss = 1.35861, ADE = 1.35861, FDE = 2.15325
+Epoch 4: Test Loss = 1.29389, ADE = 1.29389, FDE = 2.12148
+Epoch 5: Test Loss = 1.20541, ADE = 1.20541, FDE = 2.02001
+Epoch 6: Test Loss = 1.18138, ADE = 1.18138, FDE = 1.92705
+Epoch 14: Test Loss = 1.16734, ADE = 1.16734, FDE = 2.15837
+Epoch 16: Test Loss = 1.15364, ADE = 1.15364, FDE = 2.18064
+Epoch 17: Test Loss = 1.13270, ADE = 1.13270, FDE = 2.17196
+Epoch 25: Test Loss = 1.10721, ADE = 1.10721, FDE = 2.15865
+Epoch 28: Test Loss = 1.10511, ADE = 1.10511, FDE = 2.15076
+Epoch 29: Test Loss = 1.08177, ADE = 1.08177, FDE = 2.11822
+Epoch 31: Test Loss = 1.07396, ADE = 1.07396, FDE = 2.10588
+Epoch 32: Test Loss = 1.01990, ADE = 1.01990, FDE = 2.03752
+Epoch 34: Test Loss = 1.01301, ADE = 1.01301, FDE = 2.02846
+Epoch 35: Test Loss = 1.01005, ADE = 1.01005, FDE = 2.02360
+Epoch 36: Test Loss = 0.97940, ADE = 0.97940, FDE = 1.97954
+Epoch 38: Test Loss = 0.97602, ADE = 0.97602, FDE = 1.97294
+Epoch 39: Test Loss = 0.96340, ADE = 0.96340, FDE = 1.94721
+Epoch 40: Test Loss = 0.95182, ADE = 0.95182, FDE = 1.92442
+Starting experiment with Learning Rate = 0.00003
+Epoch 0: Test Loss = 1.43034, ADE = 1.43034, FDE = 2.63850
+Epoch 1: Test Loss = 1.30322, ADE = 1.30322, FDE = 2.35418
+Epoch 2: Test Loss = 1.23747, ADE = 1.23747, FDE = 2.07753
+Epoch 3: Test Loss = 1.18464, ADE = 1.18464, FDE = 2.01897
+Epoch 4: Test Loss = 1.08306, ADE = 1.08306, FDE = 1.97689
+Epoch 5: Test Loss = 1.02201, ADE = 1.02201, FDE = 1.97903
+Epoch 6: Test Loss = 0.98722, ADE = 0.98722, FDE = 1.93606
+Epoch 9: Test Loss = 0.98360, ADE = 0.98360, FDE = 1.95654
+Epoch 10: Test Loss = 0.98213, ADE = 0.98213, FDE = 1.95547
+Epoch 11: Test Loss = 0.97398, ADE = 0.97398, FDE = 1.95155
+Epoch 12: Test Loss = 0.97305, ADE = 0.97305, FDE = 1.95155
+Epoch 13: Test Loss = 0.97008, ADE = 0.97008, FDE = 1.94556
+Starting experiment with Learning Rate = 0.00200
+Starting experiment with Learning Rate = 0.00200
+Starting experiment with Learning Rate = 0.00200
+Starting experiment with Learning Rate = 0.00200
+Starting experiment with Learning Rate = 0.00200
+Starting experiment with Learning Rate = 0.00200
+Starting experiment with Learning Rate = 0.00200
+Starting experiment with Learning Rate = 0.00200
+Starting experiment with Learning Rate = 0.00001
+Epoch 0: Test Loss = 2.24171, ADE = 2.24171, FDE = 3.87445
+Epoch 1: Test Loss = 2.05161, ADE = 2.05161, FDE = 3.66559
+Epoch 2: Test Loss = 1.87299, ADE = 1.87299, FDE = 3.42700
+Epoch 3: Test Loss = 1.75743, ADE = 1.75743, FDE = 3.23509
+Epoch 4: Test Loss = 1.68692, ADE = 1.68692, FDE = 3.09912
+Epoch 5: Test Loss = 1.64322, ADE = 1.64322, FDE = 3.01593
+Epoch 6: Test Loss = 1.61917, ADE = 1.61917, FDE = 2.98019
+Epoch 7: Test Loss = 1.60132, ADE = 1.60132, FDE = 2.94901
+Epoch 8: Test Loss = 1.58071, ADE = 1.58071, FDE = 2.90842
+Epoch 9: Test Loss = 1.56078, ADE = 1.56078, FDE = 2.86902
+Epoch 10: Test Loss = 1.54231, ADE = 1.54231, FDE = 2.83250
+Epoch 11: Test Loss = 1.52180, ADE = 1.52180, FDE = 2.79264
+Epoch 12: Test Loss = 1.50158, ADE = 1.50158, FDE = 2.75541
+Epoch 13: Test Loss = 1.44395, ADE = 1.44395, FDE = 2.67065
+Epoch 14: Test Loss = 1.16399, ADE = 1.16399, FDE = 2.02735
+Epoch 15: Test Loss = 1.14606, ADE = 1.14606, FDE = 2.00022
+Epoch 19: Test Loss = 1.10150, ADE = 1.10150, FDE = 1.99864
+Epoch 21: Test Loss = 1.05072, ADE = 1.05072, FDE = 1.96753
+Epoch 22: Test Loss = 1.04071, ADE = 1.04071, FDE = 1.96447
+Epoch 23: Test Loss = 1.01679, ADE = 1.01679, FDE = 1.96509
+Epoch 48: Test Loss = 1.01147, ADE = 1.01147, FDE = 2.01986
+Epoch 49: Test Loss = 1.00904, ADE = 1.00904, FDE = 2.01698
+Epoch 50: Test Loss = 1.00486, ADE = 1.00486, FDE = 2.01195
+Epoch 55: Test Loss = 1.00308, ADE = 1.00308, FDE = 2.01105
+Epoch 61: Test Loss = 1.00235, ADE = 1.00235, FDE = 2.01023
+Epoch 64: Test Loss = 0.99983, ADE = 0.99983, FDE = 2.00709
+Epoch 65: Test Loss = 0.99910, ADE = 0.99910, FDE = 2.00665
+Epoch 66: Test Loss = 0.99529, ADE = 0.99529, FDE = 2.00168
+Epoch 68: Test Loss = 0.99264, ADE = 0.99264, FDE = 1.99821
+Epoch 69: Test Loss = 0.98609, ADE = 0.98609, FDE = 1.98800
+Epoch 71: Test Loss = 0.98419, ADE = 0.98419, FDE = 1.98501
+Epoch 77: Test Loss = 0.97972, ADE = 0.97972, FDE = 1.97967
+Starting experiment with Learning Rate = 0.00002
+Epoch 0: Test Loss = 2.05798, ADE = 2.05798, FDE = 3.67351
+Epoch 1: Test Loss = 1.75659, ADE = 1.75659, FDE = 3.23180
+Epoch 2: Test Loss = 1.64524, ADE = 1.64524, FDE = 3.01880
+Epoch 3: Test Loss = 1.60324, ADE = 1.60324, FDE = 2.95204
+Epoch 4: Test Loss = 1.56275, ADE = 1.56275, FDE = 2.87251
+Epoch 5: Test Loss = 1.52596, ADE = 1.52596, FDE = 2.79892
+Epoch 6: Test Loss = 1.48408, ADE = 1.48408, FDE = 2.71858
+Epoch 7: Test Loss = 1.16997, ADE = 1.16997, FDE = 2.02436
+Epoch 8: Test Loss = 1.15363, ADE = 1.15363, FDE = 2.01264
+Epoch 9: Test Loss = 1.10681, ADE = 1.10681, FDE = 2.00301
+Epoch 10: Test Loss = 1.10401, ADE = 1.10401, FDE = 2.01258
+Epoch 11: Test Loss = 1.04015, ADE = 1.04015, FDE = 2.00709
+Epoch 13: Test Loss = 1.02825, ADE = 1.02825, FDE = 2.02198
+Epoch 14: Test Loss = 0.99831, ADE = 0.99831, FDE = 1.99611
+Epoch 30: Test Loss = 0.98858, ADE = 0.98858, FDE = 2.01239
+Epoch 31: Test Loss = 0.98759, ADE = 0.98759, FDE = 2.02004
+Epoch 32: Test Loss = 0.98716, ADE = 0.98716, FDE = 2.00847
+Epoch 38: Test Loss = 0.98250, ADE = 0.98250, FDE = 2.00534
+Epoch 51: Test Loss = 0.96492, ADE = 0.96492, FDE = 1.99430
+Starting experiment with Learning Rate = 0.00003
+Epoch 0: Test Loss = 1.87705, ADE = 1.87705, FDE = 3.43304
+Epoch 1: Test Loss = 1.64607, ADE = 1.64607, FDE = 3.01880
+Epoch 2: Test Loss = 1.58839, ADE = 1.58839, FDE = 2.92174
+Epoch 3: Test Loss = 1.52768, ADE = 1.52768, FDE = 2.80200
+Epoch 4: Test Loss = 1.36246, ADE = 1.36246, FDE = 2.54625
+Epoch 5: Test Loss = 1.15993, ADE = 1.15993, FDE = 2.00981
+Epoch 6: Test Loss = 1.11123, ADE = 1.11123, FDE = 1.99967
+Epoch 7: Test Loss = 1.02940, ADE = 1.02940, FDE = 1.98995
+Epoch 9: Test Loss = 1.00654, ADE = 1.00654, FDE = 2.00211
+Epoch 17: Test Loss = 1.00537, ADE = 1.00537, FDE = 2.01856
+Epoch 19: Test Loss = 0.99313, ADE = 0.99313, FDE = 2.00897
+Epoch 23: Test Loss = 0.98868, ADE = 0.98868, FDE = 2.00590
+Epoch 27: Test Loss = 0.98428, ADE = 0.98428, FDE = 1.99097
+Epoch 28: Test Loss = 0.97758, ADE = 0.97758, FDE = 1.97801
+Starting experiment with Learning Rate = 0.00004
+Epoch 0: Test Loss = 1.76010, ADE = 1.76010, FDE = 3.23664
+Epoch 1: Test Loss = 1.60599, ADE = 1.60599, FDE = 2.95596
+Epoch 2: Test Loss = 1.53244, ADE = 1.53244, FDE = 2.81085
+Epoch 3: Test Loss = 1.15564, ADE = 1.15564, FDE = 2.02934
+Epoch 5: Test Loss = 1.03653, ADE = 1.03653, FDE = 1.98839
+Epoch 6: Test Loss = 1.03452, ADE = 1.03452, FDE = 2.03219
+Epoch 7: Test Loss = 0.99025, ADE = 0.99025, FDE = 1.98967
+Epoch 23: Test Loss = 0.98749, ADE = 0.98749, FDE = 1.99491
+Epoch 27: Test Loss = 0.97860, ADE = 0.97860, FDE = 1.97671
+Epoch 30: Test Loss = 0.97805, ADE = 0.97805, FDE = 1.96514
+Epoch 33: Test Loss = 0.97793, ADE = 0.97793, FDE = 1.99839
+Epoch 34: Test Loss = 0.97582, ADE = 0.97582, FDE = 1.98450
+Epoch 38: Test Loss = 0.97371, ADE = 0.97371, FDE = 1.96794
+Epoch 39: Test Loss = 0.97097, ADE = 0.97097, FDE = 1.97479
+Epoch 42: Test Loss = 0.96341, ADE = 0.96341, FDE = 1.96921
+Epoch 48: Test Loss = 0.95508, ADE = 0.95508, FDE = 1.98982
+Epoch 55: Test Loss = 0.95246, ADE = 0.95246, FDE = 1.98014
+Epoch 56: Test Loss = 0.92723, ADE = 0.92723, FDE = 1.84402
+Starting experiment with Learning Rate = 0.00005
+Epoch 0: Test Loss = 1.69170, ADE = 1.69170, FDE = 3.10214
+Epoch 1: Test Loss = 1.56565, ADE = 1.56565, FDE = 2.87752
+Epoch 2: Test Loss = 1.16659, ADE = 1.16659, FDE = 2.25961
+Epoch 3: Test Loss = 1.10948, ADE = 1.10948, FDE = 1.99834
+Epoch 4: Test Loss = 1.10920, ADE = 1.10920, FDE = 2.03638
+Epoch 5: Test Loss = 1.01678, ADE = 1.01678, FDE = 2.01505
+Epoch 11: Test Loss = 0.98535, ADE = 0.98535, FDE = 1.99318
+Epoch 18: Test Loss = 0.97174, ADE = 0.97174, FDE = 1.95411
+Epoch 20: Test Loss = 0.96337, ADE = 0.96337, FDE = 1.92555
+Epoch 26: Test Loss = 0.95682, ADE = 0.95682, FDE = 1.93309
+Epoch 28: Test Loss = 0.95550, ADE = 0.95550, FDE = 1.91895
+Epoch 30: Test Loss = 0.95059, ADE = 0.95059, FDE = 1.90380
+Epoch 56: Test Loss = 0.94945, ADE = 0.94945, FDE = 1.93643
+Epoch 61: Test Loss = 0.94304, ADE = 0.94304, FDE = 1.94319
+Starting experiment with Learning Rate = 0.00010
+Epoch 0: Test Loss = 1.57709, ADE = 1.57709, FDE = 2.90033
+Epoch 1: Test Loss = 1.11333, ADE = 1.11333, FDE = 1.98806
+Epoch 2: Test Loss = 1.03891, ADE = 1.03891, FDE = 2.00219
+Epoch 5: Test Loss = 1.03236, ADE = 1.03236, FDE = 2.08355
+Epoch 8: Test Loss = 0.97664, ADE = 0.97664, FDE = 1.95924
+Epoch 9: Test Loss = 0.96661, ADE = 0.96661, FDE = 1.95393
+Epoch 10: Test Loss = 0.96571, ADE = 0.96571, FDE = 1.95259
+Epoch 60: Test Loss = 0.96415, ADE = 0.96415, FDE = 1.95650
+Epoch 63: Test Loss = 0.95607, ADE = 0.95607, FDE = 1.97959
+Epoch 64: Test Loss = 0.93028, ADE = 0.93028, FDE = 1.92022
+Epoch 65: Test Loss = 0.91987, ADE = 0.91987, FDE = 1.86982
+Epoch 66: Test Loss = 0.91442, ADE = 0.91442, FDE = 1.87005
+Epoch 67: Test Loss = 0.91229, ADE = 0.91229, FDE = 1.88035
+Starting experiment with Learning Rate = 0.00020
+Epoch 0: Test Loss = 1.06240, ADE = 1.06240, FDE = 2.07112
+Epoch 1: Test Loss = 1.01042, ADE = 1.01042, FDE = 2.04993
+Epoch 2: Test Loss = 0.98670, ADE = 0.98670, FDE = 2.02165
+Starting experiment with Learning Rate = 0.00030
+Epoch 0: Test Loss = 1.02724, ADE = 1.02724, FDE = 1.99697
+Epoch 3: Test Loss = 1.02264, ADE = 1.02264, FDE = 2.08116
+Epoch 5: Test Loss = 1.01483, ADE = 1.01483, FDE = 2.06767
+Epoch 6: Test Loss = 1.01032, ADE = 1.01032, FDE = 2.05765
+Epoch 7: Test Loss = 0.99738, ADE = 0.99738, FDE = 2.03031
+Epoch 8: Test Loss = 0.98839, ADE = 0.98839, FDE = 1.99432
+Epoch 9: Test Loss = 0.97268, ADE = 0.97268, FDE = 1.97109
+Epoch 10: Test Loss = 0.96823, ADE = 0.96823, FDE = 1.97314
+Epoch 11: Test Loss = 0.94536, ADE = 0.94536, FDE = 1.92090
+Epoch 26: Test Loss = 0.91469, ADE = 0.91469, FDE = 1.85335
+Epoch 31: Test Loss = 0.91108, ADE = 0.91108, FDE = 1.75221
+Starting experiment with Learning Rate = 0.00040
+Epoch 0: Test Loss = 1.21875, ADE = 1.21875, FDE = 2.20698
+Epoch 1: Test Loss = 1.00368, ADE = 1.00368, FDE = 2.05336
+Epoch 3: Test Loss = 0.97948, ADE = 0.97948, FDE = 2.02185
+Epoch 4: Test Loss = 0.93297, ADE = 0.93297, FDE = 1.91586
+Epoch 5: Test Loss = 0.90641, ADE = 0.90641, FDE = 1.87580
+Starting experiment with Learning Rate = 0.00050
+Epoch 0: Test Loss = 1.13226, ADE = 1.13226, FDE = 2.11722
+Epoch 1: Test Loss = 1.00127, ADE = 1.00127, FDE = 2.06603
+Epoch 2: Test Loss = 0.98369, ADE = 0.98369, FDE = 2.04517
+Epoch 9: Test Loss = 0.96925, ADE = 0.96925, FDE = 2.00029
+Starting experiment with Learning Rate = 0.00200

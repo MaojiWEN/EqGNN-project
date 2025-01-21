@@ -102,7 +102,7 @@ except OSError:
     pass
 
 num_nodes = 0
-if args.subset == 'zara1_main.sh':
+if args.subset == 'zara1':
     args.channels = 128
 else:
     args.channels = 64
@@ -113,7 +113,7 @@ if args.subset == 'eth':
 
 if args.subset == 'univ':
     num_nodes = 2
-elif args.subset == 'zara1_main.sh':
+elif args.subset == 'zara1':
     num_nodes = 3
 else:
     num_nodes = 1
@@ -134,6 +134,18 @@ def lr_decay(optimizer, lr_now, gamma):
     return lr_new
 
 
+def create_log_file(log_dir, subset_name):
+    log_path = os.path.join(log_dir, f'{subset_name}.log')
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
+    return log_path
+
+
+def log_best_results(log_path, epoch, test_loss, ade, fde):
+    with open(log_path, 'a') as log_file:
+        log_file.write(f'Epoch {epoch}: Test Loss = {test_loss:.5f}, ADE = {ade:.5f}, FDE = {fde:.5f}\n')
+
+
 def main():
     # seed = 861
     if args.seed >= 0:
@@ -144,7 +156,6 @@ def main():
         setup_seed(seed)
 
     print('The seed is :', seed)
-
 
     dataset_train = ETHNew(args.subset, args.past_length, args.future_length, traj_scale=1., phase='training',
                            return_index=True)
@@ -157,11 +168,19 @@ def main():
 
     print(f"Number of training samples: {len(dataset_train)}")
     print(f"Number of testing samples: {len(dataset_test)}")
-
+    # With FFT Mode
     model = ESTAG(num_past=args.past_length, num_future=args.future_length, in_node_nf=1, in_edge_nf=1, hidden_nf=args.channels
                   , fft=True, eat=True, device=device, n_layers=2, n_nodes=num_nodes, with_mask=True, nodes_att_dim=args.past_length-1)
+    # Without FFT Mode
+    # model = ESTAG(num_past=args.past_length, num_future=args.future_length, in_node_nf=1, in_edge_nf=1,
+    #               hidden_nf=args.channels
+    #               , fft=False, eat=True, device=device, n_layers=2, n_nodes=num_nodes, with_mask=True,
+    #               nodes_att_dim=0)
 
     optimizer = optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
+
+    log_dir = os.path.join(os.getcwd(), 'log', 'ESTAG')  # 日志文件存储目录
+    log_path = create_log_file(log_dir, args.subset)
 
     if args.test:
         model_path = args.model_save_dir + '/' + args.model_name + '.pth.tar'
@@ -171,51 +190,47 @@ def main():
         test_loss, ade, fde = test(model, loader_test, 0, model.device)
         print('ade:', ade, 'fde:', test_loss)
 
-
     results = {'epochs': [], 'losess': []}
     best_val_loss = 1e8
     best_test_loss = 1e8
     best_ade = 1e8
     best_epoch = 0
+    best_fda = None
     lr_now = args.lr
     for epoch in range(0, args.epochs):
         if args.apply_decay:
             if epoch % args.epoch_decay == 0 and epoch > 0:
                 lr_now = lr_decay(optimizer, lr_now, args.lr_gamma)
         train(model, optimizer, epoch, loader_train)
+
         if epoch % args.test_interval == 0:
-            test_loss, ade, fde = test(model, loader_test, 0, model.device)
-            results['epochs'].append(epoch)
-            results['losess'].append(test_loss)
+            test_loss, ade, fde = test(model, loader_test, epoch, model.device)
+
+            # Log best results
             if test_loss < best_test_loss:
                 best_test_loss = test_loss
                 best_ade = ade
+                best_fde = fde
                 best_epoch = epoch
 
-                state = {'epoch': epoch,
-                         'state_dict': model.state_dict(),
-                         'optimizer': optimizer.state_dict()}
+                # Save the best model
+                state = {'epoch': epoch, 'state_dict': model.state_dict(), 'optimizer': optimizer.state_dict()}
                 subset_dir = os.path.join(args.model_save_dir, str(args.subset))
-                if not os.path.exists(subset_dir):
-                    os.makedirs(subset_dir)
+                os.makedirs(subset_dir, exist_ok=True)
                 file_path = os.path.join(subset_dir, 'ckpt_best.pth.tar')
-                # 保存模型
                 torch.save(state, file_path)
 
-            print("Best Test Loss: %.5f \t Best ade: %.5f \t Best fde: %.5f \t Best epoch %d" % (best_test_loss, best_ade, fde, best_epoch))
+                # Log best test results
+                log_best_results(log_path, epoch, best_test_loss, best_ade, best_fde)
 
+            print("Best Test Loss: %.5f \t Best ADE: %.5f \t Best FDE: %.5f \t Best epoch %d" % (best_test_loss, best_ade, best_fde, best_epoch))
 
-            state = {'epoch': epoch,
-                     'state_dict': model.state_dict(),
-                     'optimizer': optimizer.state_dict()}
-
-            subset_dir = os.path.join(args.model_save_dir, str(args.subset))
-            if not os.path.exists(subset_dir):
-                os.makedirs(subset_dir)
-            file_path = os.path.join(subset_dir, 'ckpt_'+str(epoch)+'.pth.tar')
+            # Save the current checkpoint
+            state = {'epoch': epoch, 'state_dict': model.state_dict(), 'optimizer': optimizer.state_dict()}
+            file_path = os.path.join(subset_dir, f'ckpt_{epoch}.pth.tar')
             torch.save(state, file_path)
 
-    return best_val_loss, best_test_loss, best_epoch
+    return best_test_loss, best_ade, best_epoch
 
 
 constant = 1

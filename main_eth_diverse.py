@@ -248,23 +248,35 @@ def train(model, optimizer, epoch, loader, backprop=True):
             loc_end = loc_end.cuda()
             num_valid = num_valid.cuda()
             num_valid = num_valid.type(torch.int)
+            # print(loc.shape)
+            # print(loc_end.shape)
+            # exit()
+            # torch.Size([100, 3, 8, 2])
+            # torch.Size([100, 3, 12, 2])
 
             # 并不是真正意义上的速度，而是通过坐标数据推导出的位移信息
             vel = torch.zeros_like(loc)
             vel[:,:,1:] = loc[:,:,1:] - loc[:,:,:-1]
             vel[:,:,0] = vel[:,:,1]
-
+            # print(vel.shape)
+            # exit()
             batch_size, agent_num, length, _ = loc.size()
 
             optimizer.zero_grad()
 
             vel = vel * constant
-
+            # print(vel.shape)
+            # exit()
             # [batch_size, agent_num, past_length]
             nodes = torch.sqrt(torch.sum(vel ** 2, dim=-1)).detach()
             loc_pred, category = model(nodes, loc.detach(), vel, num_valid)
 
             loc_end = loc_end[:,:,None,:,:]
+
+
+            # torch.Size([100, num_nodes, 1, 12, 2])
+            # torch.Size([100, num_nodes, 1, 12, 2])
+
             if args.supervise_all:
                 mask = get_valid_mask2(num_valid,agent_num)
                 mask = mask.cuda()

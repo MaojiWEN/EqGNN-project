@@ -1,70 +1,140 @@
 
-Dataset: ./eth_ucy/processed_data_diverse/eth_data_train.npy
+Dataset: ../eth_ucy/processed_data_diverse/eth_data_train.npy
 Total Nodes: 30307
 Constant Nodes: 189
-Non-Stationary Nodes: 28785
-Mean p-value: 0.8236
-Std p-value: 0.2982
+Non-Stationary Nodes: 28776
+Max ADF Statistic: 13578.5065
+Min ADF Statistic: -111983404786.4371
+Mean p-value: 0.8226
+Std p-value: 0.2987
+Mean ADF Statistic: 0.9233
+Std ADF Statistic: 2.1932
+Mean 1% Critical Value: -4.1511
+Mean 5% Critical Value: -3.1602
+Mean 10% Critical Value: -2.7164
 
-Dataset: ./eth_ucy/processed_data_diverse/eth_data_test.npy
+Dataset: ../eth_ucy/processed_data_diverse/eth_data_test.npy
 Total Nodes: 364
 Constant Nodes: 2
 Non-Stationary Nodes: 340
+Max ADF Statistic: 274.8549
+Min ADF Statistic: -15.0736
 Mean p-value: 0.7727
 Std p-value: 0.3196
+Mean ADF Statistic: 0.4538
+Std ADF Statistic: 2.1138
+Mean 1% Critical Value: -4.1228
+Mean 5% Critical Value: -3.1488
+Mean 10% Critical Value: -2.7110
 
-Dataset: ./eth_ucy/processed_data_diverse/hotel_data_train.npy
+Dataset: ../eth_ucy/processed_data_diverse/hotel_data_train.npy
 Total Nodes: 29676
 Constant Nodes: 2
-Non-Stationary Nodes: 28401
-Mean p-value: 0.8256
-Std p-value: 0.2965
+Non-Stationary Nodes: 28392
+Max ADF Statistic: 13578.5065
+Min ADF Statistic: -8068.1445
+Mean p-value: 0.8246
+Std p-value: 0.2969
+Mean ADF Statistic: 0.9421
+Std ADF Statistic: 2.1973
+Mean 1% Critical Value: -4.1520
+Mean 5% Critical Value: -3.1606
+Mean 10% Critical Value: -2.7166
 
-Dataset: ./eth_ucy/processed_data_diverse/hotel_data_test.npy
+Dataset: ../eth_ucy/processed_data_diverse/hotel_data_test.npy
 Total Nodes: 1197
 Constant Nodes: 215
 Non-Stationary Nodes: 854
+Max ADF Statistic: 172.1931
+Min ADF Statistic: -111983404786.4371
 Mean p-value: 0.6833
 Std p-value: 0.3754
+Mean ADF Statistic: -0.1608
+Std ADF Statistic: 2.1628
+Mean 1% Critical Value: -4.0883
+Mean 5% Critical Value: -3.1348
+Mean 10% Critical Value: -2.7044
 
-Dataset: ./eth_ucy/processed_data_diverse/univ_data_train.npy
+Dataset: ../eth_ucy/processed_data_diverse/univ_data_train.npy
 Total Nodes: 18704
 Constant Nodes: 349
-Non-Stationary Nodes: 17669
-Mean p-value: 0.8366
-Std p-value: 0.2842
+Non-Stationary Nodes: 17646
+Max ADF Statistic: 7804.6210
+Min ADF Statistic: -111983404786.4371
+Mean p-value: 0.8323
+Std p-value: 0.2865
+Mean ADF Statistic: 0.8832
+Std ADF Statistic: 2.1140
+Mean 1% Critical Value: -4.1433
+Mean 5% Critical Value: -3.1571
+Mean 10% Critical Value: -2.7149
 
-Dataset: ./eth_ucy/processed_data_diverse/univ_data_test.npy
+Dataset: ../eth_ucy/processed_data_diverse/univ_data_test.npy
 Total Nodes: 48559
 Constant Nodes: 0
 Non-Stationary Nodes: 46385
+Max ADF Statistic: 13578.5065
+Min ADF Statistic: -8068.1445
 Mean p-value: 0.8217
 Std p-value: 0.3005
+Mean ADF Statistic: 0.9747
+Std ADF Statistic: 2.2518
+Mean 1% Critical Value: -4.1544
+Mean 5% Critical Value: -3.1615
+Mean 10% Critical Value: -2.7170
 
-Dataset: ./eth_ucy/processed_data_diverse/zara1_data_train.npy
+Dataset: ../eth_ucy/processed_data_diverse/zara1_data_train.npy
 Total Nodes: 82627
 Constant Nodes: 444
-Non-Stationary Nodes: 78550
-Mean p-value: 0.8264
-Std p-value: 0.2963
+Non-Stationary Nodes: 78517
+Max ADF Statistic: 13578.5065
+Min ADF Statistic: -111983404786.4371
+Mean p-value: 0.8251
+Std p-value: 0.2970
+Mean ADF Statistic: 0.9330
+Std ADF Statistic: 2.1846
+Mean 1% Critical Value: -4.1500
+Mean 5% Critical Value: -3.1598
+Mean 10% Critical Value: -2.7162
 
-Dataset: ./eth_ucy/processed_data_diverse/zara1_data_test.npy
+Dataset: ../eth_ucy/processed_data_diverse/zara1_data_test.npy
 Total Nodes: 6079
 Constant Nodes: 0
 Non-Stationary Nodes: 5904
+Max ADF Statistic: 355.7032
+Min ADF Statistic: -2262.5783
 Mean p-value: 0.8511
 Std p-value: 0.2763
+Mean ADF Statistic: 1.3056
+Std ADF Statistic: 2.3644
+Mean 1% Critical Value: -4.1660
+Mean 5% Critical Value: -3.1663
+Mean 10% Critical Value: -2.7192
 
-Dataset: ./eth_ucy/processed_data_diverse/zara2_data_train.npy
+Dataset: ../eth_ucy/processed_data_diverse/zara2_data_train.npy
 Total Nodes: 26076
 Constant Nodes: 191
 Non-Stationary Nodes: 24671
+Max ADF Statistic: 13578.5065
+Min ADF Statistic: -111983404786.4371
 Mean p-value: 0.8179
 Std p-value: 0.3035
+Mean ADF Statistic: 0.9472
+Std ADF Statistic: 2.2502
+Mean 1% Critical Value: -4.1529
+Mean 5% Critical Value: -3.1609
+Mean 10% Critical Value: -2.7167
 
-Dataset: ./eth_ucy/processed_data_diverse/zara2_data_test.npy
+Dataset: ../eth_ucy/processed_data_diverse/zara2_data_test.npy
 Total Nodes: 5910
 Constant Nodes: 0
-Non-Stationary Nodes: 5724
-Mean p-value: 0.8499
-Std p-value: 0.2669
+Non-Stationary Nodes: 5703
+Max ADF Statistic: 8933.7547
+Min ADF Statistic: -5219.8829
+Mean p-value: 0.8421
+Std p-value: 0.2725
+Mean ADF Statistic: 0.6676
+Std ADF Statistic: 1.8075
+Mean 1% Critical Value: -4.1389
+Mean 5% Critical Value: -3.1553
+Mean 10% Critical Value: -2.7141

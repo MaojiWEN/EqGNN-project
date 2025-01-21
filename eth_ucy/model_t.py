@@ -120,6 +120,8 @@ class EqMotion(nn.Module):
 
     def forward(self, h, x, vel, num_valid, edge_attr=None):
         # hinit = torch.zeros()
+
+        # vel [100, 3, 8, 2]
         vel_pre = torch.zeros_like(vel)
         vel_pre[:,:,1:] = vel[:,:,:-1] 
         vel_pre[:,:,0] = vel[:,:,0]
@@ -127,7 +129,9 @@ class EqMotion(nn.Module):
         vel_cosangle = torch.sum(vel_pre*vel,dim=-1)/((torch.norm(vel_pre,dim=-1)+EPS)*(torch.norm(vel,dim=-1)+EPS))
 
         vel_angle = torch.acos(torch.clamp(vel_cosangle,-1,1))
-
+        # [100, 3, 8]
+        # print(vel_angle.shape)
+        # exit()
         batch_size, agent_num, length = x.shape[0], x.shape[1], x.shape[2]
 
         valid_agent_mask = self.get_valid_mask2(num_valid,agent_num)
@@ -144,9 +148,11 @@ class EqMotion(nn.Module):
             vel = torch.matmul(dct_m,vel)
 
         h = self.embedding(h)
+        print(h.shape)
         vel_angle_embedding = self.embedding2(vel_angle)
+        # [100, 3, 32]
         h = torch.cat([h,vel_angle_embedding],dim=-1)
-
+        # [100, 3, 64]
         x_mean = torch.mean(torch.mean(x*valid_agent_mask,dim=-2,keepdim=True),dim=-3,keepdim=True) * (agent_num/num_valid[:,None,None,None])
         x = self.coord_trans((x-x_mean).transpose(2,3)).transpose(2,3) + x_mean
         vel = self.vel_trans(vel.transpose(2,3)).transpose(2,3)
